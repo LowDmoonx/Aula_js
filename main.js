@@ -1,28 +1,13 @@
-/* MODELO 1
-var a = 5
-var b = 7
-var c = a+b
-console.log(c)
-FIM MODELO 1*/
+const f = document.getElementById("formulario") /*pegando formulario referência no HTML*/ 
 
-/* MODELO 2
- var a = 3
-    var b = 4
-function somar (x,  y){
-   var c = x+y
-   return c
-}
+f.addEventListener("submit", function(e){ /*evento de para escutar*/
+    e.preventDefault(); /* evita que a página reinicie*/
 
-console.log(somar (a,b))
-FIM MODELO 2*/
+    const v1 = Number(document.getElementById("num1").value) /*(number) transforma unma parte do codígo em número "texto"*/
+    const v2 = Number(document.getElementById("num2").value)
 
-/* MODELO 3
-var a = 1
-var b = 2
-const d = 0
+    const soma = v1+v2 /* onde a soma acontece*/
 
-function somar (x,y){
-let c = x+y
-return c
-}
-FIM MODELO 3*/
+    document.getElementById("resultado").textContent=soma /* onde deve ser mostrado o resultado*/
+
+})

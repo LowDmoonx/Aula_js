@@ -1,0 +1,28 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  .calc {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+  }
+
+  #cal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+  }
+
+  #resultado{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+  }
